@@ -18,15 +18,15 @@ class Stack extends Component {
       <>
       <div className='section-header'> 
         <h2>Skills</h2>
-      <button className='stack-header-button' onClick={e => this.handleClick(e)}>&#8250;</button>
+      {/* <button className='stack-header-button' onClick={e => this.handleClick(e)}>&#8250;</button> */}
       </div>
-        <section className="section wide-screen">
+        <section className="section-skills">
           <FrontEnd />
           <BackEnd />     
         </section>
-        <section className="section mobile">
+        {/* <section className="section mobile">
           {this.state.display === 'front-end' ? <FrontEnd /> : <BackEnd />}  
-        </section>    
+        </section>     */}
       </>
     )
   }

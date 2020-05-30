@@ -2,15 +2,15 @@
 // header is centered, click right arrow button to view next skill or project */
 
 * {
-  font-family: "BenchNine", sans-serif;
+  font-family: 'Athiti', sans-serif;
   box-sizing: border-box;
   margin: 0px;
 }
 
 :root {
-  --server-height: 400px;
+  --server-height: 425px;
   --server-width: 275px;
-  --server-color-face: #7d7d7d;
+  --server-color-face: whitesmoke; 
 }
 
 h1,
@@ -25,25 +25,22 @@ nav {
   position: sticky;
   top: 0px;
   background-color: black;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
   z-index: 1;
   padding: 5px 0px;
 }
 
-/* a {
-  position: relative;
-} */
-
+.nav-links-container{    
+  display: flex;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
 .nav-link{
   color: white;
   text-decoration: none;
   font-size: 24px; 
   position: relative;
-  text-align: center;
-  width: 75px;
 }
 
 .nav-link::before {
@@ -96,34 +93,47 @@ nav {
 }
 
 
-.projects-section {
-  display: flex;
-  justify-content: center;
+
+.skills-section .mock-mobile-container:hover{
+
 }
 
-.mock-mobile-container:hover {
+
+
+
+
+.section-header{
+  padding: 10px; 
+}
+
+.section-projects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-projects .mock-mobile-container:hover {
   transition: 0.5s ease;
   box-shadow: inset 5px 5px 25px black;
 }
 
-.mock-mobile-container:hover .mock-mobile-button{
+.section-projects .mock-mobile-container:hover .mock-mobile-button{
   display: none; 
 }
 
-.mock-mobile-container:hover .project-image {
+.section-projects .mock-mobile-container:hover .project-image {
   opacity: 0.1;
 }
 
-.mock-mobile-container:hover .project-image-overlay {
+.section-projects .mock-mobile-container:hover .project-image-overlay {
   opacity: 1;
 }
 
-.project-image {
+.section-projects .project-image {
   width: 100%;
   margin-top: 20px;
 }
 
-.project-image-overlay {
+.section-projects .project-image-overlay {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -137,7 +147,7 @@ nav {
   border-radius: 25px;
 }
 
-.project-image-link {
+.section-projects .project-image-link {
   text-decoration: none;
   color: white;
   background-color: black;
@@ -150,7 +160,11 @@ nav {
   width: 250px;
 }
 
-.project-image-text {
+.section-projects .project-image-link:hover{
+  box-shadow: 1px 1px 10px whitesmoke;
+}
+
+.section-projects .project-image-text {
   font-size: 21px;
   width: 250px;
   height: 200px;
@@ -158,29 +172,35 @@ nav {
   margin: 25px auto;
 }
 
+.section-skills{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
+.section-skills .front-end-list{
+  list-style: none;
+  font-size: 21px;
+  padding: 0px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-.section-header{
-  padding: 10px; 
+.section-skills .front-end-list>li{
+  border: 1px solid grey;
+  border-radius: 25px;
+  margin-top: 10px;
+  width: 225px;
+  margin: 10px auto;
+  padding: 5px;
+  padding-left: 25px;
+  box-shadow: 1px 1px 1px grey;
 }
 
 .stack-header{
   padding: 15px;
 }
 
-.stack-header-button{
+/* .stack-header-button{
   border: 1px solid black;
   background-color: white;
   color: black;
@@ -198,32 +218,28 @@ nav {
   outline: none; 
 }
 
-.section{
-  background-color: black;
-}
-
 .stack-header-button:hover{
   cursor: pointer; 
-}
+} */
 
-.section.mobile{
+/* .section.mobile{
   height: 90vh;
   display: flex;
   align-items: center;
   width: 100%;
   position: relative;
   top: -40px;
-}
+} */
 
-.stack-section.mobile>div{
+/* .stack-section.mobile>div{
   margin: 0 auto; 
 }
 
 .section.wide-screen{
   display: none 
-}
+} */
 
-.stack-section-frontend-container {
+/* .stack-section-frontend-container {
   border: 1px solid whitesmoke;
   border-radius: 25px;
   box-shadow: 1px 10px 10px grey;
@@ -289,17 +305,20 @@ nav {
   margin: 0px auto;
   border-radius: 25px;
   margin-top: 25px;
-}
+} */
 
-.stack-section-server-container {
+.section-skills .back-end-container {
   background: var(--server-color-face);
   width: var(--server-width);
   height: var(--server-height);
   position: relative;
-  margin: 0 auto;
+  color: black;
+  margin-top: 25px;
+  margin-top: 125px;
+  margin-bottom: 50px;
 }
 
-.stack-section-server-container::before {
+.section-skills .back-end-container::before {
   content: "";
   display: inline-block;
   background: #e0e0e0;
@@ -311,7 +330,7 @@ nav {
   left: 8px;
 }
 
-.stack-section-server-container::after {
+.section-skills .back-end-container::after {
   content: "";
   display: inline-block;
   background: #a8a8a8;
@@ -324,23 +343,21 @@ nav {
   box-shadow: 2px 2px 10px grey;
 }
 
-.stack-section-server-container h2 {
+.section-skills .back-end-container h2 {
   text-align: center;
-  color: white;
   background-color: var(--server-color-face);
   margin-bottom: 5px;
 }
 
-.stack-section-server-container ul {
+.section-skills .back-end-container ul {
   padding: 0px;
   margin-top: 0px;
 }
 
-.stack-section-server-container li {
-  color: white;
+.section-skills .back-end-container li {
   background-color: var(--server-color-face);
-  border: 1px solid whitesmoke;
-  box-shadow: 10px 10px 10px black;
+  border: 1px solid grey;
+  box-shadow: 5px 5px 10px grey;
   border-radius: 5px;
   padding: 5px;
   font-size: 21px;
@@ -349,12 +366,12 @@ nav {
   align-items: center;
 }
 
-.stack-section-server-container-text {
+.section-skills .back-end-text {
   background-color: var(--server-color-face);
   width: 100px;
 }
 
-.stack-section-server-container-lines {
+.section-skills .back-end-lines {
   width: 150px;
   height: 10px;
   display: inline-block;
@@ -363,6 +380,7 @@ nav {
   animation: shimmer 5s infinite;
   background: repeating-linear-gradient(0.1turn, white, #1d8c41);
   background-size: 1000px 100%;
+  border: 1px solid grey;
 }
 
 @keyframes shimmer {
@@ -385,7 +403,11 @@ nav {
 }
 
 @media screen and (min-width: 600px) {
-  .section.wide-screen{
+  .section-skills .back-end-container{
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  /* .section.wide-screen{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -399,7 +421,7 @@ nav {
 
   .stack-header-button{
     display: none; 
-  }
+  } */
 
 
 }

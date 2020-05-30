@@ -27,12 +27,14 @@ const Project = () => {
     const renderProjects = () => {
         return projects.map(key => {
             return(
-            <MockMobile key={key.id}>
+            <div className='viewport-wrapper' key={key.id}>
+            <MockMobile>
                 <ProjectScreen 
                 imgSrc= {key.imgSrc}
                 text={key.text} 
                 url={key.url}/>
             </MockMobile>
+            </div>
             )
         })
     }
@@ -42,7 +44,6 @@ const Project = () => {
     return(
         <>
         <div className="section-header">
-            <h1>Projects</h1>
         </div> 
         <section className="section-projects">
             {renderProjects()}

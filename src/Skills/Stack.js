@@ -16,15 +16,15 @@ class Stack extends Component {
   render(){
     return(
       <>
-      <div className='stack-header'> 
+      <div className='section-header'> 
         <h2>Skills</h2>
       <button className='stack-header-button' onClick={e => this.handleClick(e)}>&#8250;</button>
       </div>
-        <section className="stack-section wide-screen">
+        <section className="section wide-screen">
           <FrontEnd />
           <BackEnd />     
         </section>
-        <section className="stack-section mobile">
+        <section className="section mobile">
           {this.state.display === 'front-end' ? <FrontEnd /> : <BackEnd />}  
         </section>    
       </>

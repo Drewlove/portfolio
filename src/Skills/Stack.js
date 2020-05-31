@@ -19,8 +19,8 @@ class Stack extends Component {
       <div className='section-header'> 
       </div>
         <section className="section-skills">
-          <div className='viewport-wrapper'><FrontEnd /></div>
-          <div className='viewport-wrapper'><BackEnd /></div>     
+          <FrontEnd />
+          <BackEnd />
         </section>
       </>
     )

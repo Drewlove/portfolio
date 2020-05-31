@@ -310,8 +310,7 @@ nav {
   }
 }
 
-/* managing different heights for mobile devices */
-
+/* vertically centering elements in Skills and Projects section */
 @media only screen and (max-height: 568px){
   .mock-mobile-container{
     margin-top: 0vh;

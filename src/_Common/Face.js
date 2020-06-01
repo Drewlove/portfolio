@@ -5,8 +5,6 @@ const Face = (props) => {
     <section className='section-face'>
       <div className="word-bubble">
         {props.children}
-          {/* <h2>{props.title}</h2>
-          <p>{props.text}</p> */}
       </div>
       <div className="word-bubble-container">
         <div className="word-bubble-arrow"></div>

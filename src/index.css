@@ -229,7 +229,7 @@ nav {
   border-right: 50px solid transparent;
   border-top: 150px solid black;
   position: relative;
-  left: 120px;
+  left: 100px;
   bottom: 5px;
 }
 
@@ -237,7 +237,7 @@ nav {
   position: relative;
   bottom: 165px;
   height: 210px;
-  right: 20px;
+  right: 30px;
   width: 175px;
   margin: 50px auto;
   border-bottom-left-radius: 100px;

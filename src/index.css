@@ -292,8 +292,8 @@ nav {
 }
 
 .section-face .face .eye {
-  height: 20px;
-  width: 25px;
+  height: 30px;
+  width: 35px;
   border: 1px solid black;
   margin: 0px auto;
   background-color: white;
@@ -303,12 +303,12 @@ nav {
 
 .section-face .face .iris {
   position: relative;
-  top: 5px;
+  top: 10px;
   height: 10px;
   width: 10px;
   border-radius: 25px;
-  background: #402700;
   margin: 0px auto;
+  background: radial-gradient(circle, rgba(107,90,90,1) 0%, rgba(51,31,5,1) 12%, rgba(142,88,16,1) 25%, rgba(112,68,0,1) 50%, rgba(255,255,255,1) 75%, rgba(0,0,0,1) 100%);
 }
 
 .section-face .face .nose {
@@ -548,17 +548,9 @@ nav {
 }
 
 
-/* wide screen devices */
-@media only screen and (min-width: 700px){
-  .mock-mobile-container{
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-  }
+wide screen devices
+@media only screen and (min-width: 500px){
 
-  .section-skills .back-end-container{
-    margin-bottom: 0vh;
-    margin-top: 0vh;
-  }
 }
 
 /* vertically centering elements in Skills and Projects section */
@@ -579,18 +571,6 @@ nav {
     margin-bottom: 20vh;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 nav{
@@ -727,7 +707,12 @@ nav .active{
   cursor: pointer; 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
+  .section-skills .back-end-container{
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+  }
+
   .nav-hamburger-button{
     display: none; 
   }

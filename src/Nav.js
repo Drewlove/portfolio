@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
-import {IndexLink, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 class Nav extends Component{
-
     state = {
         displayModal: false, 
         displayMenu: false, 
@@ -36,7 +35,7 @@ class Nav extends Component{
             </button>
             <section className='nav-links-wrapper'>
                 <NavLink className='nav-link' activeClassName='nav-link-active' onClick={e => this.handleNavClick(e)} to='/' exact>Home</NavLink>
-                <NavLink className='nav-link' activeClassName='nav-link-active' onClick={e => this.handleNavClick(e)} to='/about'>About</NavLink>
+                {/* <NavLink className='nav-link' activeClassName='nav-link-active' onClick={e => this.handleNavClick(e)} to='/about'>About</NavLink> */}
                 <NavLink className='nav-link' activeClassName='nav-link-active' onClick={e => this.handleNavClick(e)} to='/skills'>Skills</NavLink>
                 <NavLink className='nav-link' activeClassName='nav-link-active' onClick={e => this.handleNavClick(e)} to='/projects'>Projects</NavLink>
                 <NavLink className='nav-link' activeClassName='nav-link-active' onClick={e => this.handleNavClick(e)} to='/contact'>Contact</NavLink>
@@ -45,21 +44,5 @@ class Nav extends Component{
         )
     }
 }
-
-
-
-    // return(
-    //     // <nav>
-    //     //     <div className='nav-links-container'>
-    //     //     <NavLink className='nav-link' activeClassName='nav-link-active' to ='/' exact>Home</NavLink>
-    //     //     <NavLink className='nav-link' activeClassName='nav-link-active' to ='/about'>About</NavLink>
-    //     //     <NavLink className='nav-link' activeClassName='nav-link-active' to ='/skills'>Skills</NavLink>
-    //     //     <NavLink className='nav-link' activeClassName='nav-link-active' to ='/projects'>Projects</NavLink>
-    //     //     <NavLink className='nav-link' activeClassName='nav-link-active' to ='/contact'>Contact</NavLink>
-    //     //     </div>
-    //     // </nav>
-
-    // )
-// }
 
 export default Nav 

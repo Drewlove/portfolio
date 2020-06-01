@@ -21,6 +21,13 @@ h3 {
   margin: 0 auto;
 }
 
+.contact-email{
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  display: block;
+}
+
 nav {
   position: sticky;
   top: 0px;
@@ -174,26 +181,24 @@ nav {
   padding: 10px; 
 }
 
-.section-home{
+.section-face{
   display: flex; 
   flex-direction: column; 
   align-items: center; 
 }
 
-.section-home .word-bubble{
-  max-width: 650px; 
-}
-
-.section-home .word-bubble h2 {
+.section-face .word-bubble h2 {
   text-align: center;
 }
 
-.section-home .word-bubble p {
+.section-face .word-bubble p {
   font-size: 21px;
   text-align: center; 
 }
 
-.section-home .word-bubble {
+.section-face .word-bubble {
+  height: 125px;
+  max-width: 650px;
   background-color: black;
   color: white;
   padding: 10px;
@@ -203,11 +208,11 @@ nav {
   width: 90vw;
 }
 
-.section-home .word-bubble-container{
+.section-face .word-bubble-container{
   margin: 0px auto; 
 }
 
-.section-home .word-bubble-arrow  {
+.section-face .word-bubble-arrow  {
   width: 0;
   height: 0;
   border-right: 30px solid transparent;
@@ -217,7 +222,7 @@ nav {
   bottom: 5px;
 }
 
-.section-home .face {
+.section-face .face {
   position: relative;
   bottom: 180px;
   height: 240px;
@@ -229,7 +234,7 @@ nav {
   box-shadow: 10px 10px 10px darkgrey;
 }
 
-.section-home .face .haircut {
+.section-face .face .haircut {
   height: 45px;
   box-shadow: 5px 5px 5px darkgrey;
   position: relative;
@@ -238,25 +243,25 @@ nav {
   border-bottom-right-radius: 25px;
 }
 
-.section-home .face .hair {
+.section-face .face .hair {
   background-color: #784512;
   border-top-left-radius: 75px;
 }
 
-.section-home .face .face-top {
+.section-face .face .face-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
 }
 
-.section-home .face .ear {
+.section-face .face .ear {
   height: 25px;
   width: 15px;
   background-color: #fff9de;
 }
 
-.section-home .face .ear.left {
+.section-face .face .ear.left {
   position: relative;
   right: 15px;
   border-top-left-radius: 100px;
@@ -264,7 +269,7 @@ nav {
   box-shadow: -1px 3px 5px darkgrey;
 }
 
-.section-home .face .ear.right {
+.section-face .face .ear.right {
   position: relative;
   left: 15px;
   border-top-right-radius: 100px;
@@ -272,12 +277,12 @@ nav {
   box-shadow: 1px 3px 5px darkgrey;
 }
 
-.section-home .face .eye-container {
+.section-face .face .eye-container {
   height: 50px;
   width: 50px;
 }
 
-.section-home .face .eyebrow {
+.section-face .face .eyebrow {
   margin: 0 auto;
   height: 7px;
   border-radius: 25px;
@@ -286,7 +291,7 @@ nav {
   border-top-right-radius: 75px;
 }
 
-.section-home .face .eye {
+.section-face .face .eye {
   height: 20px;
   width: 25px;
   border: 1px solid black;
@@ -296,7 +301,7 @@ nav {
   box-shadow: 2px 1px 1px #b8b195;
 }
 
-.section-home .face .iris {
+.section-face .face .iris {
   position: relative;
   top: 5px;
   height: 10px;
@@ -306,7 +311,7 @@ nav {
   margin: 0px auto;
 }
 
-.section-home .face .nose {
+.section-face .face .nose {
   height: 15px;
   width: 20px;
   border-radius: 25px;
@@ -319,7 +324,7 @@ nav {
   margin-bottom: 5px;
 }
 
-.section-home .face .beard {
+.section-face .face .beard {
   position: relative;
   top: 25px;
   height: 100px;
@@ -329,7 +334,7 @@ nav {
   box-shadow: 5px 5px 10px darkgrey;
 }
 
-.section-home .face .mouth {
+.section-face .face .mouth {
   height: 25px;
   width: 50px;
   background-color: #26231e;
@@ -342,7 +347,7 @@ nav {
   box-shadow: 5px 5px 10px black;
 }
 
-.section-home .face .teeth {
+.section-face .face .teeth {
   background-color: white;
   height: 5px;
   width: 35px;
@@ -352,7 +357,7 @@ nav {
   box-shadow: 10px 10px 10px black;
 }
 
-.section-home .face .tongue {
+.section-face .face .tongue {
   background-color: pink;
   height: 5px;
   width: 25px;
@@ -721,8 +726,6 @@ nav .active{
 .nav-wrapper .new-button:hover{
   cursor: pointer; 
 }
-
-
 
 @media only screen and (min-width: 600px) {
   .nav-hamburger-button{

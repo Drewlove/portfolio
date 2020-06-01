@@ -6,7 +6,7 @@ const Home = () => {
     <section class='section-home'>
       <div class="word-bubble">
         <h2>Hi! I'm Drew.</h2>
-        <p>I make full stack web applicaitons</p>
+        <p>I make full stack web applicaitons.</p>
       </div>
       <div class="word-bubble-container">
         <div class="word-bubble-arrow"></div>

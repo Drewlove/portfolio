@@ -208,8 +208,6 @@ nav {
 }
 
 .section-home .word-bubble {
-  position: relative;
-  right: 10px;
   background-color: black;
   color: white;
   padding: 10px;
@@ -226,18 +224,17 @@ nav {
 .section-home .word-bubble-arrow  {
   width: 0;
   height: 0;
-  border-right: 50px solid transparent;
-  border-top: 150px solid black;
+  border-right: 30px solid transparent;
+  border-top: 200px solid black;
   position: relative;
-  left: 100px;
+  left: 120px;
   bottom: 5px;
 }
 
 .section-home .face {
   position: relative;
-  bottom: 165px;
-  height: 210px;
-  right: 30px;
+  bottom: 180px;
+  height: 240px;
   width: 175px;
   margin: 50px auto;
   border-bottom-left-radius: 100px;

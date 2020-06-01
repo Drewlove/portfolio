@@ -1,19 +1,13 @@
-import React, {Component} from "react";
+import React, {useEffect} from "react";
 import FrontEnd from './FrontEnd'
 import BackEnd from './BackEnd'
 
-class Stack extends Component {
+const Stack = () => {
 
-  state = {
-    display: 'front-end'
-  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
-  handleClick(e){
-    const display = this.state.display === 'front-end' ? 'back-end' : 'front-end'
-    this.setState({display})
-  }
-
-  render(){
     return(
       <>
         <section className="section-skills">
@@ -23,6 +17,5 @@ class Stack extends Component {
       </>
     )
   }
-} 
 
 export default Stack;

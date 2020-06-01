@@ -16,8 +16,6 @@ class Stack extends Component {
   render(){
     return(
       <>
-      <div className='section-header'> 
-      </div>
         <section className="section-skills">
           <FrontEnd />
           <BackEnd />

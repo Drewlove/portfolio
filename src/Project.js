@@ -44,8 +44,6 @@ class Project extends Component{
 
         return(
             <>
-            <div className="section-header">
-            </div> 
             <section className="section-projects">
                 {this.renderProjects(projects)}
             </section>

@@ -5,7 +5,7 @@ const FrontEnd = () => {
   return (
     <MockMobile>
       <h2>Front-End</h2>
-      <ul className='front-end-list'>
+      <ul className='mock-mobile-unordered-list'>
         <li>
           <span>Javascript: ES6</span>
         </li>

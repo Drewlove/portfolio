@@ -97,6 +97,89 @@ nav {
   box-shadow: 2px 2px 1px lightgrey;
 }
 
+.mock-mobile-unordered-list{
+  list-style: none;
+  font-size: 21px;
+  padding: 0px;
+}
+
+.mock-mobile-unordered-list>li{
+  border: 1px solid grey;
+  border-radius: 25px;
+  margin-top: 10px;
+  width: 225px;
+  margin: 10px auto;
+  padding: 5px;
+  padding-left: 25px;
+  box-shadow: 1px 1px 1px grey;
+}
+
+.mock-mobile-about-container h2{
+  margin-bottom: -10px; 
+}
+
+.mock-mobile-about-container h3{
+  text-align: center; 
+  position: relative; 
+  margin-bottom: 0px; 
+}
+
+.mock-mobile-about-profile-pic {
+  background: linear-gradient(
+    45deg,
+    grey 0%,
+    lightgrey 10%,
+    darkgrey 0%,
+    whitesmoke 100%
+  );
+  margin-bottom: 10px;
+  margin-left: 10px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px darkgrey;
+  display: inline-block;
+}
+
+.mock-mobile-about-container .mock-mobile-unordered-list {
+  display: inline-block;
+  margin-bottom: 35px;
+  margin-left: 10px;
+}
+
+.mock-mobile-about-container .mock-mobile-unordered-list > li {
+  width: 150px;
+  height: 5px;
+  background: linear-gradient(
+    45deg,
+    grey 0%,
+    lightgrey 10%,
+    darkgrey 70%,
+    white 100%
+  );
+}
+
+.mock-mobile-about-container .mock-mobile-unordered-list > li:nth-child(2) {
+  width: 125px;
+  margin-left: 25px;
+}
+
+.mock-mobile-dummy-text-box {
+  height: 150px;
+  width: 250px;
+  background: linear-gradient(45deg, whitesmoke 0%, lightgrey 70%, white 100%);
+  margin: 0 auto;
+  border: 2px solid lightgrey;
+}
+
+
+
+
+
+
+
+
+
 .skills-section .mock-mobile-device:hover{
 
 }
@@ -105,10 +188,207 @@ nav {
   padding: 10px; 
 }
 
+.section-home{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.section-home .word-bubble{
+  max-width: 650px; 
+}
+
+.section-home .word-bubble h2 {
+  text-align: center;
+}
+
+.section-home .word-bubble p {
+  font-size: 21px;
+  text-align: center; 
+}
+
+.section-home .word-bubble {
+  position: relative;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 20px 15px 10px lightgrey;
+  margin-top: 5vh;
+  width: 90vw;
+}
+
+.section-home .word-bubble-container{
+  margin: 0px auto; 
+}
+
+.section-home .word-bubble-arrow  {
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 150px solid black;
+  position: relative;
+  left: 120px;
+  bottom: 5px;
+}
+
+.section-home .face {
+  position: relative;
+  bottom: 165px;
+  height: 210px;
+  right: 20px;
+  width: 175px;
+  margin: 50px auto;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: #fff9de;
+  box-shadow: 10px 10px 10px darkgrey;
+}
+
+.section-home .face .haircut {
+  height: 45px;
+  box-shadow: 5px 5px 5px darkgrey;
+  position: relative;
+  bottom: 20px;
+  width: 185px;
+  border-bottom-right-radius: 25px;
+}
+
+.section-home .face .hair {
+  background-color: #784512;
+  border-top-left-radius: 75px;
+}
+
+.section-home .face .face-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.section-home .face .ear {
+  height: 25px;
+  width: 15px;
+  background-color: #fff9de;
+}
+
+.section-home .face .ear.left {
+  position: relative;
+  right: 15px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  box-shadow: -1px 3px 5px darkgrey;
+}
+
+.section-home .face .ear.right {
+  position: relative;
+  left: 15px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 1px 3px 5px darkgrey;
+}
+
+.section-home .face .eye-container {
+  height: 50px;
+  width: 50px;
+}
+
+.section-home .face .eyebrow {
+  margin: 0 auto;
+  height: 7px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+}
+
+.section-home .face .eye {
+  height: 20px;
+  width: 25px;
+  border: 1px solid black;
+  margin: 0px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 1px 1px #b8b195;
+}
+
+.section-home .face .iris {
+  position: relative;
+  top: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 25px;
+  background: #402700;
+  margin: 0px auto;
+}
+
+.section-home .face .nose {
+  height: 15px;
+  width: 20px;
+  border-radius: 25px;
+  position: relative;
+  top: 35px;
+  background-color: #fff6cc;
+  box-shadow: 3px 3px 5px black;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  margin-bottom: 5px;
+}
+
+.section-home .face .beard {
+  position: relative;
+  top: 25px;
+  height: 100px;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-top-right-radius: 25px;
+  box-shadow: 5px 5px 10px darkgrey;
+}
+
+.section-home .face .mouth {
+  height: 25px;
+  width: 50px;
+  background-color: #26231e;
+  position: relative;
+  top: 30px;
+  margin: 0px auto;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border: 3px solid #fff9de;
+  box-shadow: 5px 5px 10px black;
+}
+
+.section-home .face .teeth {
+  background-color: white;
+  height: 5px;
+  width: 35px;
+  margin: 0px auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.section-home .face .tongue {
+  background-color: pink;
+  height: 5px;
+  width: 25px;
+  margin: 0px auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  top: 10px;
+}
+
 .section-projects {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; 
+}
+
+.section-about {
+  display: flex;
+  justify-content: center;
 }
 
 .section-projects .mock-mobile-device:hover {
@@ -179,23 +459,6 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}
-
-.section-skills .front-end-list{
-  list-style: none;
-  font-size: 21px;
-  padding: 0px;
-}
-
-.section-skills .front-end-list>li{
-  border: 1px solid grey;
-  border-radius: 25px;
-  margin-top: 10px;
-  width: 225px;
-  margin: 10px auto;
-  padding: 5px;
-  padding-left: 25px;
-  box-shadow: 1px 1px 1px grey;
 }
 
 .stack-header{
@@ -313,7 +576,7 @@ nav {
 /* vertically centering elements in Skills and Projects section */
 @media only screen and (max-height: 568px){
   .mock-mobile-container{
-    margin-top: 0vh;
+    margin-top: 5vh;
   }
 }
 

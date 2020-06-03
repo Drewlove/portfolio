@@ -32,7 +32,7 @@ const Project = () => {
       },
       {
         text:
-          "Interactive graph displaying USA CO2 emissions by energy type, state, and per GDP basis from 1980-2016.",
+          "Interactive graph displaying USA CO2 emissions from 1980-2016 by energy type, state, and, optionally, as a ratio of GDP.",
         url: "https://co-2-gdp-app.now.sh/",
         id: 2,
         altImg: "CO2 Emissions Image",

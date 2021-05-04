@@ -28,7 +28,7 @@ const Project = () => {
   const projects = [
     {
       textDescription:
-        "Full stack app that creates quarterly profit and loss projects for food businesses.",
+        "Full stack app that creates quarterly profit and loss projections for food businesses.",
       stackDescription: {
         front: ["React (with hooks)"],
         back: ["NodeJS", "PostgreSQL", "Heroku"],

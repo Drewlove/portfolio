@@ -5,15 +5,15 @@ const FrontEnd = () => {
   return (
     <MockMobile>
       <h2>Front-End</h2>
-      <ul className='mock-mobile-unordered-list'>
+      <ul className="mock-mobile-unordered-list">
+        <li>
+          <span>React</span>
+        </li>
         <li>
           <span>Javascript: ES6</span>
         </li>
         <li>
           <span>HTML\CSS</span>
-        </li>
-        <li>
-          <span>React</span>
         </li>
         <li>
           <span>Jest</span>
